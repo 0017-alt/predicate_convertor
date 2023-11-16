@@ -27,9 +27,10 @@ exp:
 con:
     | LPAR con RPAR AND con { EAndPar($2,$5) }
     | LPAR con RPAR OR con { EOrPar($2,$5) }
-    | rel AND con { EAnd($1,$3) }
-    | rel OR con { EOr($1,$3) }
-    | NOT rel { ENot($2) }
+    | LPAR con RPAR { EPar($2) }
+    | con AND con { EAnd($1,$3) }
+    | con OR con { EOr($1,$3) }
+    | NOT con { ENot($2) }
     | rel { EConst($1) }
 ;
 

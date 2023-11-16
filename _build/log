@@ -1,10 +1,10 @@
-# dune build
+# dune exec ./main.exe
 # OCAMLPARAM: unset
 # Workspace root: /home/flor/intelligence_system/7/converter
-$ /usr/bin/nproc > /tmp/dunea7a106.output 2> /dev/null
+$ /usr/bin/nproc > /tmp/dune462f92.output 2> /dev/null
 # Auto-detected concurrency: 4
 # disable binary cache
-$ /home/flor/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune7c0655.output
+$ /home/flor/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune2f4375.output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -111,13 +111,4 @@ $ /home/flor/.opam/4.14.1/bin/ocamlc.opt -config > /tmp/dune7c0655.output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamldep.opt -modules -impl syntax.ml) > _build/default/.main.eobjs/syntax.ml.d
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -bin-annot -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -no-alias-deps -opaque -open Dune__exe -o .main.eobjs/byte/dune__exe__Syntax.cmo -c -impl syntax.ml)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -open Dune__exe -short-paths -i -impl parser__mock.ml.mock) > _build/default/parser__mock.mli.inferred
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -bin-annot -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -no-alias-deps -opaque -open Dune__exe -o .main.eobjs/byte/dune__exe__Eval.cmo -c -impl eval.ml)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -bin-annot -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -no-alias-deps -opaque -open Dune__exe -o .main.eobjs/byte/dune__exe__Parser.cmi -c -intf parser.mli)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -bin-annot -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -no-alias-deps -opaque -open Dune__exe -o .main.eobjs/byte/dune__exe__Lexer.cmo -c -impl lexer.ml)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -bin-annot -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -no-alias-deps -opaque -open Dune__exe -o .main.eobjs/byte/dune__exe__Main.cmo -c -impl main.ml)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -bin-annot -I .main.eobjs/byte -I /home/flor/.opam/4.14.1/lib/fl-jikken-unifier -intf-suffix .ml -no-alias-deps -opaque -open Dune__exe -o .main.eobjs/byte/dune__exe__Parser.cmo -c -impl parser.ml)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -o main.bc /home/flor/.opam/4.14.1/lib/fl-jikken-unifier/constraintSolver.cmo /home/flor/.opam/4.14.1/lib/fl-jikken-unifier/tySyntax.cmo .main.eobjs/byte/dune__exe.cmo .main.eobjs/byte/dune__exe__Syntax.cmo .main.eobjs/byte/dune__exe__Eval.cmo .main.eobjs/byte/dune__exe__Parser.cmo .main.eobjs/byte/dune__exe__Lexer.cmo .main.eobjs/byte/dune__exe__Main.cmo)
-$ (cd _build/default && /home/flor/.opam/4.14.1/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -a -g -o main.exe -output-complete-exe /home/flor/.opam/4.14.1/lib/fl-jikken-unifier/constraintSolver.cmo /home/flor/.opam/4.14.1/lib/fl-jikken-unifier/tySyntax.cmo .main.eobjs/byte/dune__exe.cmo .main.eobjs/byte/dune__exe__Syntax.cmo .main.eobjs/byte/dune__exe__Eval.cmo .main.eobjs/byte/dune__exe__Parser.cmo .main.eobjs/byte/dune__exe__Lexer.cmo .main.eobjs/byte/dune__exe__Main.cmo)
+# Workspace root: /home/flor/intelligence_system/7/converter

@@ -7,9 +7,10 @@ and expr =
   | EExists of relation * expr
   | EAndPar of expr * expr
   | EOrPar of expr * expr
-  | EAnd of string * expr
-  | EOr of string * expr
-  | ENot of string
+  | EPar of expr
+  | EAnd of expr * expr
+  | EOr of expr * expr
+  | ENot of expr
   | EConst of string 
 and command =
   | CExp of expr
